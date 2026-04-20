@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miért vizsgálják a budapesti gyógyszerészek ezt a mézes keveréket?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0c0c0c;color:#d8d8d8;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+
+/* HERO */
+.hero{position:relative;width:100%;max-height:400px;overflow:hidden}
+.hero img{width:100%;height:400px;object-fit:cover;cursor:pointer}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(transparent 30%,#0c0c0c)}
+
+/* CONTAINER */
+.w{max-width:620px;margin:0 auto;padding:0 18px}
+
+/* TAG + HEADLINE */
+.head{padding:14px 0 4px;text-align:center}
+.tag{display:inline-block;background:rgba(212,168,48,.1);color:#d4a830;font-size:8.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;padding:4px 16px;border-radius:3px;border:1px solid rgba(212,168,48,.2);margin-bottom:10px}
+.head h1{font-family:'Crimson Text',serif;font-size:24px;line-height:1.32;color:#fff;font-weight:700}
+.head h1 em{color:#d4a830;font-style:normal}
+.head .sub{font-size:12.5px;color:#777;font-weight:300;margin-top:6px;line-height:1.6}
+
+/* CTA GRANDE */
+.cta-top{margin:16px 0;padding:22px 20px;background:linear-gradient(135deg,#d4a830,#a88420);border-radius:10px;text-align:center;box-shadow:0 10px 40px rgba(212,168,48,.18)}
+.cta-top h2{font-family:'Crimson Text',serif;font-size:17px;color:#0c0c0c;font-weight:700;margin-bottom:3px;line-height:1.35}
+.cta-top p{font-size:11.5px;color:rgba(12,12,12,.55);margin-bottom:12px;font-weight:300}
+.btn{display:inline-block;background:#0c0c0c;color:#d4a830;padding:14px 46px;font-size:14px;font-weight:600;text-decoration:none;border-radius:6px;transition:all .25s;box-shadow:0 4px 18px rgba(0,0,0,.4);letter-spacing:.3px}
+.btn:hover{background:#fff;color:#0c0c0c;transform:translateY(-2px)}
+.cta-top small{display:block;margin-top:6px;font-size:7.5px;color:rgba(12,12,12,.3)}
+
+/* TEXT */
+.txt{padding:12px 0}
+.txt p{font-size:14px;color:#bbb;font-weight:300;line-height:1.85;margin-bottom:12px}
+.txt strong{color:#fff;font-weight:500}
+.txt em{color:#d4a830;font-style:normal;font-weight:400}
+
+/* QUESTION */
+.qb{text-align:center;padding:8px 0;margin:4px 0}
+.qb h3{font-family:'Crimson Text',serif;font-size:19px;color:#fff;font-weight:700;line-height:1.35}
+.qb h3 em{color:#d4a830;font-style:normal}
+
+/* TESTIMONIAL IMAGE */
+.testi{margin:14px 0;border-radius:8px;overflow:hidden;position:relative}
+.testi img{width:100%;cursor:pointer;transition:transform .3s}.testi img:hover{transform:scale(1.02)}
+.testi-ov{position:absolute;bottom:0;left:0;right:0;padding:16px 18px;background:linear-gradient(transparent,rgba(0,0,0,.88) 35%)}
+.testi-q{font-family:'Crimson Text',serif;font-size:14px;color:#eee;font-style:italic;line-height:1.55;margin-bottom:4px}
+.testi-n{font-size:10px;color:#d4a830;font-weight:500}
+
+/* REVEAL LIST */
+.rlist{margin:14px 0;background:#131313;border-radius:8px;overflow:hidden;border:1px solid #222}
+.rlist-h{padding:12px 16px;font-family:'Crimson Text',serif;font-size:14px;color:#d4a830;font-weight:700;border-bottom:1px solid #222}
+.ri{padding:10px 16px;border-bottom:1px solid #1a1a1a;display:flex;gap:10px;align-items:flex-start}
+.ri:last-child{border-bottom:none}
+.ri-ic{color:#d4a830;font-size:13px;flex-shrink:0;margin-top:2px}
+.ri-tx{font-size:12.5px;color:#bbb;font-weight:300;line-height:1.55}
+.ri-tx strong{color:#fff;font-weight:500}
+
+/* QUOTE */
+.dq{margin:14px 0;padding:14px 18px;border-left:3px solid #d4a830;background:#131313;border-radius:0 6px 6px 0}
+.dq p{font-family:'Crimson Text',serif;font-size:14px;color:#ddd;font-style:italic;line-height:1.6}
+
+/* CTA BOTTOM */
+.cta-bot{margin:16px 0;padding:20px;background:#131313;border-radius:8px;text-align:center;border:1px solid #d4a830}
+.cta-bot h3{font-family:'Crimson Text',serif;font-size:16px;color:#fff;margin-bottom:3px;font-weight:700}
+.cta-bot p{font-size:11px;color:#777;margin-bottom:12px;font-weight:300}
+.cta-bot .btn{background:#d4a830;color:#0c0c0c}
+.cta-bot .btn:hover{background:#fff;color:#0c0c0c}
+.cta-bot small{display:block;margin-top:6px;font-size:7.5px;color:#555}
+
+/* DISCLAIMER */
+.disc{font-size:8px;color:#555;margin:14px 0;padding:10px 12px;background:#0e0e0e;border-radius:4px;line-height:1.6;border:1px solid #1a1a1a}
+
+/* FOOTER */
+footer{padding:16px 18px 30px;text-align:center;font-size:8px;color:#444}
+footer a{color:#d4a830;text-decoration:none}footer a:hover{text-decoration:underline}
+
+@media(max-width:600px){
+.head h1{font-size:20px}
+.qb h3{font-size:16px}
+.cta-top h2{font-size:15px}
+.hero img{height:300px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<a href="https://lp.estilohypeelite.shop/preclick"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663297503148/jCMGTU5NUP78zZrraNsLhW/mem14-honey-spices-dark-BdBSZjShfpiY3EeXPBnUUB.webp" alt="Akácméz üvegben fűszerekkel"></a>
+<div class="hero-overlay"></div>
+</section>
+
+<div class="w">
+
+<!-- HEADLINE -->
+<div class="head">
+<span class="tag">Meglepő felfedezés · Budapest · 2026</span>
+<h1>Miért vizsgálják a budapesti gyógyszerészek <em>ezt a mézes keveréket?</em></h1>
+<p class="sub">Egy egyszerű konyhai összetevő, amely nem úgy hat, ahogy gondolnánk.</p>
+</div>
+
+<!-- CTA GRANDE -->
+<div class="cta-top">
+<h2>&#9654; Nézze meg, mit fedeztek fel a méz és az emlékezet kapcsolatáról</h2>
+<p>Rövid videó, amely mindent megmagyaráz</p>
+<a href="https://lp.estilohypeelite.shop/preclick" class="btn">Videó megtekintése &rarr;</a>
+<small>Ingyenes tájékoztató tartalom · 3 perc</small>
+</div>
+
+<!-- TEXT -->
+<div class="txt">
+<p>Ön is észrevette, hogy az utóbbi időben <strong>egyre nehezebben emlékszik a nevekre?</strong> Hogy bemegy a szobába, és <strong>elfelejti, miért ment be?</strong></p>
+
+<p>A legtöbb ember azt gondolja, ez normális. <strong>De mi van, ha mégsem az?</strong></p>
+
+<p>Egy <strong>budapesti gyógyszerész</strong> nemrég meglepő összefüggést fedezett fel a pácienseik körében. Azok, akik egy bizonyos <em>mézes keveréket</em> fogyasztottak reggel — <strong>váratlan változásokról számoltak be.</strong></p>
+</div>
+
+<!-- QUESTION -->
+<div class="qb">
+<h3>De miért pont <em>a méz?</em><br>És miért kell <em>pontosan így</em> fogyasztani?</h3>
+</div>
+
+<!-- TEXT -->
+<div class="txt">
+<p>A válasz abban rejlik, <strong>hogyan</strong> és <strong>mivel</strong> fogyasztjuk. Önmagában a méz csak egy édesítő. De ha <em>ezzel a négy másik összetevővel</em> kombináljuk, és <strong>reggel, éhgyomorra</strong> vesszük be — valami egészen más történik.</p>
+
+<p>A titok nem új. A <strong>magyar méhészek</strong> generációk óta ismerik ezt a keveréket. De csak most, hogy a <strong>budapesti szakemberek</strong> megvizsgálták — <em>értették meg, miért hat.</em></p>
+</div>
+
+<!-- TESTIMONIAL IMAGE -->
+<div class="testi">
+<a href="https://lp.estilohypeelite.shop/preclick"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663297503148/jCMGTU5NUP78zZrraNsLhW/mem14-hungarian-pharmacist-ch5HiZehZvnR6BMveHPAY7.webp" alt="Magyar gyógyszerész mézzel"></a>
+<div class="testi-ov">
+<p class="testi-q">„Amikor a kollegáim megmutatták, hogyan hat ez a keverék — először nem hittem el. De a páciensek visszajelzései meggyőztek. Három hónap után az emberek azt mondták: 'Végre emlékszem, hová tettem a kulcsaimat.'"</p>
+<p class="testi-n">— Kovács István, 68 éves, Budapest V. kerület</p>
+</div>
+</div>
+
+<!-- REVEAL LIST -->
+<div class="rlist">
+<div class="rlist-h">Amit megtudhat a videóból:</div>
+<div class="ri">
+<span class="ri-ic">&#9670;</span>
+<div class="ri-tx">Mi az a <strong>„rejtett anyag"</strong> a mézben, amely a tudósok szerint <strong>közvetlenül hat az agysejtek működésére</strong></div>
+</div>
+<div class="ri">
+<span class="ri-ic">&#9670;</span>
+<div class="ri-tx"><strong>4 másik összetevő</strong>, amely „aktiválja" a méz hatását — és amelyet <strong>minden magyar konyhában megtalál</strong></div>
+</div>
+<div class="ri">
+<span class="ri-ic">&#9670;</span>
+<div class="ri-tx">Miért <strong>nem működik</strong>, ha a mézet teába teszi — és mi a <strong>helyes módszer</strong></div>
+</div>
+<div class="ri">
+<span class="ri-ic">&#9670;</span>
+<div class="ri-tx">A nap <strong>egyetlen időszaka</strong>, amikor a keverék <strong>a leghatékonyabb</strong> — és miért</div>
+</div>
+</div>
+
+<!-- QUOTE -->
+<div class="dq">
+<p>„Nem a méz maga a titok. Hanem az, ami történik, amikor a megfelelő összetevőkkel, a megfelelő időben fogyasztjuk. Ezt a legtöbb ember nem tudja — és pontosan ezt magyarázzuk el a videóban."</p>
+</div>
+
+<!-- CTA BOTTOM -->
+<div class="cta-bot">
+<h3>Ismerje meg a teljes receptet — lépésről lépésre</h3>
+<p>Pontos összetevők · Helyes arányok · Ideális időpont</p>
+<a href="https://lp.estilohypeelite.shop/preclick" class="btn">Videó megtekintése &rarr;</a>
+<small>Ingyenes tájékoztató tartalom</small>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disc">
+<strong>Jogi nyilatkozat:</strong> Ez a cikk kizárólag tájékoztató jellegű, és nem minősül orvosi tanácsadásnak. Az étrend-kiegészítők nem helyettesítik a változatos étrendet és az egészséges életmódot. Az eredmények egyénenként eltérőek lehetnek. Bármilyen étrendi változtatás előtt konzultáljon orvosával. A cikkben közölt vélemények az olvasók személyes tapasztalatait tükrözik.
+</div>
+
+</div>
+
+<footer>
+<p><a href="privacy.html">Adatvédelmi irányelvek</a> &middot; <a href="terms.html">Felhasználási feltételek</a></p>
+<p style="margin-top:3px">© <script>document.write(new Date().getFullYear())</script> &middot; CNPJ: 65.042.853/0001-31</p>
+</footer>
+
+<script>
+(function(){var q=window.location.search;if(!q)return;document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(!h||h.startsWith('#')||h.startsWith('mailto:'))return;a.setAttribute('href',h.includes('?')?h+'&'+q.substring(1):h+q)})})();
+</script>
+<script type="text/javascript" src="https://lp.estilohypeelite.shop/pretrack.js?rtkcmpid=69e666053bab5180c0ddb009"></script>
+</body>
+</html>
